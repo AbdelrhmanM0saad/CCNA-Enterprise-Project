@@ -1,0 +1,14 @@
+vpc 
+set pcname + name 
+ip ip + subnet + getway 
+----------------------------------------------------------------------------
+example 
+set pcname IT_1
+ip 10.1.1.10 255.255.255.0 10.1.1.1
+----------------------------------------------------------------------------
+windows 
+setting => network and internet => network connections => internet protocol version 4 (TCP/IPv4) properties => use the following ip address : 
+write the ip address 
+write the subnet mask 
+write the default gateway 
+-----------------------------------------------------------------------------

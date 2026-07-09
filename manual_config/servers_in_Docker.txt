@@ -1,0 +1,13 @@
+in docker in PNETLab :
+mkdir -p /home/service1 /home/service2 /home/service3 /home/service4
+-----------------------------------------------------------------------------
+echo "<h1>Service 1: Web Portal</h1>" > /home/service1/index.html
+echo "<h1>Service 2: File Storage</h1>" > /home/service2/index.html
+echo "<h1>Service 3: Documentation</h1>" > /home/service3/index.html
+echo "<h1>Service 4: System Logs</h1>" > /home/service4/index.html
+-----------------------------------------------------------------------------
+cd /home/service1 && python3 -m http.server 80 &
+cd /home/service2 && python3 -m http.server 8081 &
+cd /home/service3 && python3 -m http.server 8082 &
+cd /home/service4 && python3 -m http.server 8083 &
+-----------------------------------------------------------------------------
